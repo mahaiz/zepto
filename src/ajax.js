@@ -1,7 +1,7 @@
 //     Zepto.js
 //     (c) 2010-2016 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
-
+// 新加测试 忽略
 ;(function($){
   var jsonpID = 0,
       document = window.document,
@@ -20,7 +20,8 @@
   // trigger a custom event and return false if it was cancelled
   function triggerAndReturn(context, eventName, data) {
     var event = $.Event(eventName)
-    $(context).trigger(event, data)
+    $(context).trigger(event, data);
+    console.log("test")
     return !event.isDefaultPrevented()
   }
 
